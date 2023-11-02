@@ -19,6 +19,6 @@ struct ItemModel: Identifiable, Codable {
     }
     
     func updateCompleted()-> ItemModel {
-        return ItemModel(Id: id, Title: title, IsCompleted: true) // check Id
+        return ItemModel(Id: id, Title: title, IsCompleted: !isCompleted) // check Id
     }
 }
